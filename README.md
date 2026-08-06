@@ -9,6 +9,19 @@
   <img src="assets/dashboard-demo.gif" alt="Dashboard Demo" width="100%">
 </p>
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Project Objectives](#project-objectives)
+- [Dataset](#dataset)
+- [Dashboard Pages](#dashboard-pages)
+- [Features](#features)
+- [Data Preparation](#data-preparation)
+- [Technologies Used](#technologies-used)
+- [Repository Structure](#repository-structure)
+- [How to Open](#how-to-open)
+- [Author](#author)
+
 ## Overview
 
 This project presents an interactive **Power BI dashboard** developed to analyze Amazon product data using information on pricing, discounts, categories, ratings, and customer reviews.
@@ -120,6 +133,19 @@ Focuses on customer ratings and review metrics, helping identify highly rated pr
 
 ---
 
+# Features
+
+- Interactive dashboard with cross-filtering between visuals
+- Executive KPI cards for key business metrics
+- Category-based product analysis
+- Product exploration with dynamic filtering
+- Pricing and discount analysis
+- Customer ratings and review insights
+- Data cleaning and transformation using Power Query
+- Business metrics calculated with DAX
+
+---
+
 # Data Preparation
 
 Data preparation was performed entirely in **Power Query**, including:
@@ -133,24 +159,14 @@ Data preparation was performed entirely in **Power Query**, including:
 
 ---
 
-# DAX Measures
-
-The dashboard includes custom DAX measures used to calculate key business indicators, including:
-
-- Total Products
-- Total Reviews
-- Average Price
-- Average Discount
-- Average Rating
-
----
-
 # Technologies Used
 
-- Microsoft Power BI Desktop
-- Power Query
-- DAX
-- Kaggle Dataset
+| Technology | Purpose |
+|------------|---------|
+| Microsoft Power BI Desktop | Dashboard development |
+| Power Query | Data cleaning and transformation |
+| DAX | Business calculations and KPIs |
+| Kaggle | Data source |
 
 ---
 
@@ -192,4 +208,5 @@ amazon-product-analytics-dashboard/
 
 Statistics Undergraduate at the Federal University of Minas Gerais (UFMG)
 
-GitHub: https://github.com/matheusoch
+- GitHub: https://github.com/matheusoch
+- LinkedIn: https://www.linkedin.com/in/matheuspcoelho/
