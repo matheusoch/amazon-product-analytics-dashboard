@@ -1,5 +1,10 @@
 # Amazon Product Analytics Dashboard
 
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-Data%20Analysis-blue)
+![Power Query](https://img.shields.io/badge/Power%20Query-ETL-green)
+![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-20BEFF?logo=kaggle)
+
 <p align="center">
   <img src="assets/dashboard-demo.gif" alt="Dashboard Demo" width="100%">
 </p>
@@ -27,25 +32,37 @@ The dashboard was developed to answer questions such as:
 
 ## Dataset
 
-- **Source:** Amazon Sales Dataset (Kaggle)
-- **Records:** 1,400+ Amazon products
-- **Main Features:**
-  - Product information
-  - Categories
-  - Actual and discounted prices
-  - Discount percentages
-  - Ratings
-  - Rating counts
-  - Customer reviews
-  - Product links
+This project uses the **Amazon Sales Dataset**, publicly available on Kaggle.
 
-The entire dashboard was built using a single dataset (`amazon.csv`).
+- **Dataset:** Amazon Sales Dataset
+- **Author:** Karkavelraja J
+- **Source:** https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset
+- **License:** CC BY-NC-SA 4.0
+
+The dataset contains over **1,400 Amazon products** with information including:
+
+- Product details
+- Categories
+- Actual and discounted prices
+- Discount percentages
+- Customer ratings
+- Rating counts
+- Review titles and contents
+- Product and image links
+
+The dashboard was developed using the **amazon.csv** file after performing data cleaning and transformation in **Power Query**.
+
+> **License Notice**
+>
+> This repository contains an analytical dashboard built from the Amazon Sales Dataset. The original dataset is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)** license.
+>
+> Please refer to the original Kaggle dataset page for the complete license terms and attribution requirements.
 
 ---
 
 # Dashboard Pages
 
-## Executive Overview
+## Overview
 
 <p align="center">
   <img src="images/overview.png" width="100%">
@@ -108,10 +125,10 @@ Focuses on customer ratings and review metrics, helping identify highly rated pr
 Data preparation was performed entirely in **Power Query**, including:
 
 - Data type conversion
-- Currency symbol removal
-- Price conversion to numeric values
-- Discount percentage conversion
-- Rating count cleaning
+- Removal of currency symbols
+- Conversion of prices to numeric values
+- Conversion of discount percentages to numeric format
+- Cleaning of rating count values
 - General data formatting
 
 ---
@@ -139,12 +156,22 @@ The dashboard includes custom DAX measures used to calculate key business indica
 
 # Repository Structure
 
-```
+```text
 amazon-product-analytics-dashboard/
 │
 ├── assets/
+│   └── dashboard-demo.gif
+│
 ├── data/
+│   └── amazon.csv
+│
 ├── images/
+│   ├── overview.png
+│   ├── category-analysis.png
+│   ├── pricing-discounts.png
+│   ├── product-explorer.png
+│   └── customer-reviews.png
+│
 ├── Amazon_Product_Analytics_Dashboard.pbix
 └── README.md
 ```
@@ -153,9 +180,9 @@ amazon-product-analytics-dashboard/
 
 # How to Open
 
-1. Download the repository.
-2. Open `Amazon_Product_Analytics_Dashboard.pbix` using Power BI Desktop.
-3. Interact with the report pages and filters.
+1. Clone or download this repository.
+2. Open **Amazon_Product_Analytics_Dashboard.pbix** using Microsoft Power BI Desktop.
+3. Explore the report pages using the interactive filters and visualizations.
 
 ---
 
@@ -163,6 +190,6 @@ amazon-product-analytics-dashboard/
 
 **Matheus Rocha**
 
-Statistics Undergraduate at UFMG
+Statistics Undergraduate at the Federal University of Minas Gerais (UFMG)
 
 GitHub: https://github.com/matheusoch
